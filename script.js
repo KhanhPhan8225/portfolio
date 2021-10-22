@@ -12,6 +12,7 @@ async fuction run() {
   const image = await getImage()
   
   const img = document.querySelector("#sn")
-  div.setAttribute('src', image)
+  img.setAttribute('src', image)
+}
   
   run()
