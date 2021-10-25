@@ -44,9 +44,9 @@ section
 .btn 
 {
 	position: relative;
-	background: #2196f3;
+	background: #2f9bf4;
 	display: inline-block;
-	color: #fff;
+	color: #000;
 	margin-top: 20px;
 	padding: 10px 30px;
 	font-size: 18px;
@@ -228,10 +228,11 @@ img
 .formBx form input[type="submit"]
 {
 	max-width: 100px;
-	background: #2196f3;
+	background: #2f9bf4;
 	cursor: pointer;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	color: #000
 }
 .contactInfo
 {
@@ -289,9 +290,9 @@ img
 .qua
 {
 	position: relative;
-	background: #2196f3;
+	background: #2f9bf4;
 	display: inline-block;
-	color: #fff;
+	color: #000;
 	margin-top: 20px;
 	padding: 10px 30px;
 	font-size: 18px;
