@@ -15,7 +15,8 @@
 
   gtag('config', 'G-F7NDC2TVB2');
 </script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_turnstileCb" async defer></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 </head>
 
 <body>
@@ -117,7 +118,12 @@
 					<input type="text" name="name" id="name" placeholder="Họ và Tên">
 					<input type="email" name="email" id="email" placeholder="Email">
 					<textarea placeholder="Tin nhắn của bạn" id="message" name="message"></textarea>
-					<div class="g-recaptcha" data-sitekey="6LcauNccAAAAANXJIMDWszQ-KDl_m8vXyxQReinE"></div>
+					<!-- <div class="g-recaptcha" data-sitekey="6LcauNccAAAAANXJIMDWszQ-KDl_m8vXyxQReinE"></div> -->
+					<div class="checkbox mb-3">
+						<!-- The Turnstile widget will be injected in the following div. -->
+						<div id="myWidget"></div>
+						<!-- end. -->
+					  </div>
 					<input type="submit" value="Send">
 				</form>
 			</div>
@@ -136,7 +142,18 @@
 		</a>
 		  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
 	</div>
-
+	<script>
+		// This function is called when the Turnstile script is loaded and ready to be used.
+		// The function name matches the "onload=..." parameter.
+		function _turnstileCb() {
+			console.debug('_turnstileCb called');
+		
+			turnstile.render('#myWidget', {
+			  sitekey: '0x4AAAAAAAA4lttGyRpq6A-o',
+			  theme: 'auto',
+			});
+		}
+		</script>
 	
 	<script type="text/javascript">
 		window.addEventListener('scroll', function(){
