@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Tệp xác minh quyền sở hữu miền cho các Microsoft 365 – nằm ở gốc của trang web",
+  "Domain": "khanhphan.eu.org",
+  "Id": "2c77f366-ce6f-48c4-9e06-142910687702"
+}
